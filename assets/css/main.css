@@ -1,4 +1,7 @@
-/* Basic reset */
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset some default styles */
 body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
     padding: 0;
@@ -6,28 +9,29 @@ body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote, dl, dd {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333333;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 960px;
     margin: auto;
     padding: 20px;
 }
 
 .site-header, .site-footer {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .site-title {
     font-size: 24px;
-    color: #000000;
+    color: #0056b3;
     text-decoration: none;
     padding-left: 20px;
 }
@@ -52,6 +56,8 @@ body {
 
 .page-content {
     padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .post-list-heading {
@@ -79,7 +85,7 @@ body {
 }
 
 footer {
-    background-color: #222;
+    background-color: #0056b3;
     color: white;
     padding: 20px;
     text-align: center;
@@ -102,3 +108,4 @@ footer {
 .footer-col {
     margin-bottom: 20px;
 }
+
