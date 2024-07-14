@@ -20,29 +20,32 @@ body {
 .wrapper {
     max-width: 960px;
     margin: auto;
-    padding: 20px;
+    padding: 0 20px; /* Reduced padding on the sides to better align the header with page content */
 }
 
-.site-header, .site-footer {
+.site-header {
     background-color: #ffffff;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex; /* Use flexbox to align logo and site title */
+    justify-content: flex-start; /* Align content to the start */
+    align-items: center; /* Vertical alignment */
 }
 
 .site-title {
     font-size: 24px;
     color: #0056b3;
     text-decoration: none;
-    padding-left: 20px;
-    display: flex; /* Ensures flex layout for logo and text alignment */
-    align-items: center; /* Aligns the logo and the title text vertically */
+    display: flex;
+    align-items: center; /* Ensures vertical alignment with the logo */
+    margin-left: 20px; /* Ensures it starts at the same point as the text below */
 }
 
 .header-logo {
-    height: 100px; /* Control the size of the logo */
-    margin-right: 10px; /* Space between the logo and title text */
-    display: block; /* Ensures the image is properly displayed */
+    height: 100px;
+    margin-right: 10px; /* Maintains a small gap between the logo and the title */
 }
+
 
 .site-nav {
     text-align: right;
