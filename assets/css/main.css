@@ -96,25 +96,20 @@ body {
 }
 
 footer {
-    background-color: #0056b3;
-    color: white;
+    background-color: #fff;  /* Changed from blue to white */
+    color: #333333;             /* Ensuring text is visible on a white background */
     padding: 20px;
     text-align: center;
 }
 
-.contact-list, .social-media-list {
-    padding: 0;
-}
-
-.social-media-list li {
-    display: inline;
-    margin-right: 10px;
+.social-media-list li a, .contact-list li a, .u-email {
+    color: #0056b3;             /* Optional: Change link colors if needed for better visibility */
 }
 
 .svg-icon {
-    width: 24px;
-    height: 24px;
+    fill: #0056b3;              /* Ensure SVG icons are visible against white background */
 }
+
 
 .footer-col {
     margin-bottom: 20px;
