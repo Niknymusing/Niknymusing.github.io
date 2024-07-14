@@ -42,7 +42,7 @@ body {
 }
 
 .header-logo {
-    height: 130px;
+    height: 150px;
     margin-right: 20px; /* Maintains a small gap between the logo and the title */
 }
 
@@ -95,22 +95,33 @@ body {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #fff;  /* Changed from blue to white */
-    color: #333333;             /* Ensuring text is visible on a white background */
-    padding: 20px;
-    text-align: center;
+.footer {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    color: #fff;
+    width: 100%; /* Take full width of its container */
+    margin-bottom: 20px;
 }
 
-.social-media-list li a, .contact-list li a, .u-email {
-    color: #0056b3;             /* Optional: Change link colors if needed for better visibility */
+.social-media-list {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display list items in a row */
+    justify-content: center; /* Center list horizontally */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0; /* Add some vertical margin for spacing */
+}
+
+.social-media-list li {
+    margin: 0 15px; /* Space out the icons */
 }
 
 .svg-icon {
-    fill: #0056b3;              /* Ensure SVG icons are visible against white background */
+    fill: #0056b3; /* Color for the SVG icons */
+    width: 24px; /* Control the size of the icons */
+    height: 24px;
 }
 
 
-.footer-col {
-    margin-bottom: 20px;
-}
+
