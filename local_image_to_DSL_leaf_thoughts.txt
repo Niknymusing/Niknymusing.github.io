@@ -1,0 +1,35 @@
+multiclass classification problem of hierarchical graph structures 
+- use graph parsing network in combination with CNN encoder of 
+
+global -> 
+local (corresponding to top-down parsing of the DSL derivation graph), and 
+
+global-> local :: s0= top hierarchical graph structure classifier (e.g. 
+set grid size), s1= next hierarchical graph structure .. down to bottom of 
+graph structure hierarchy = sm.
+
+Challenge : map global information in the image to high level structure 
+information in the DSL derivation graph, such that the top-down derivation 
+(via the generated graph) of the DSL expression is tractable
+
+Construction :
+
+
+
+local -> global 
+(corresponding to bottom-up parsing of the DSL derivation graph)
+
+
+Challenge :: map local information in the image to low-level (leaf) 
+structure in the DSL derivation graph, such that the bottom-up derivation 
+of the DSL expression (via the generated graph) is tractable
+
+
+
+Stack of monads construction :: each stacked monad corresponds to a 
+hierarchical abstraction of the DSL, including a subset of all items and 
+transformation rules corresponding to top-down (global->local, encoding) 
+hierarchical features partitions, and bottom-up (local->global, decoding) 
+hierarchical features partitions,
+such that the features encoded in each monad corresponds to a hierarchy of 
+the (encoder resp. decoder) parsing graph AE
